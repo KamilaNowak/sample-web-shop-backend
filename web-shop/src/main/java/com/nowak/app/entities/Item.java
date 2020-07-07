@@ -17,7 +17,7 @@ public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name="item_id")
     private Long id;
 
     @Column(name="serial_number")
@@ -29,13 +29,13 @@ public class Item {
     @Column(name="title")
     private String title;
 
-    @Column(name="description")
+    @Column(name="item_description")
     private String description;
 
     @Column(name="price")
     private Long price;
 
-    @Column(name="availability")
+    @Column(name="item_availability")
     private int availability;
 
     @Column(name="image_url")

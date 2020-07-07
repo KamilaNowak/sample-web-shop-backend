@@ -18,7 +18,7 @@ public class ItemCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name="category_id")
     private Long id;
 
     @Column(name="category_title")
@@ -26,7 +26,7 @@ public class ItemCategory {
 
     @OneToMany(
             cascade = CascadeType.ALL,
-            mappedBy = "category"
+            mappedBy = "itemCategory"
     )
     private Set<Item> itemList;
 }
