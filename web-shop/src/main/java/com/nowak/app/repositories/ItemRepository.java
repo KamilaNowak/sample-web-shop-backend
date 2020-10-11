@@ -14,5 +14,9 @@ public interface ItemRepository extends PagingAndSortingRepository<Item, Long> {
     //http://localhost:8080/items/search/findByItemCategory_Id?id=1
     Page<Item> findByItemCategory_Id(@RequestParam("id") Long id, Pageable pageable);
 
-    Page<Item> findByTitleContaining(@RequestParam("q") String query, Pageable pageable);
+    Page<Item> findByTitleContaining(@RequestParam("query") String query, Pageable pageable);
+
+    //http://localhost:8080/items/search/findById{?id,page,size,sort}
+    Page<Item> findById(@RequestParam("id") Long id, Pageable pageable);
+
 }

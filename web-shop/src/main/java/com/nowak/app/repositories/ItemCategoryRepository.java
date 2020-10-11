@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin(origins = "*")
 @RepositoryRestResource(
-        collectionResourceRel = "item-category",
+        collectionResourceRel = "itemCategory",
         path = "item-category"
 )
 @Repository

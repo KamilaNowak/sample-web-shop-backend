@@ -20,7 +20,7 @@ public class Item {
     @Column(name="item_id")
     private Long id;
 
-    @Column(name="serial_number")
+
     private String serialNumber;
 
     @Column(name="is_active")
